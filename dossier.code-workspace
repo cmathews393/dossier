@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.analysis.extraPaths": [
+			"dossier_api/dossier"
+		],
+		"python.createEnvironment.trigger": "off",
+		"python.terminal.activateEnvironment": false
+	},
+	"extensions": {
+		"recommendations": [
+			"cweijan.dbclient-jdbc",
+			"docker.docker"
+		]
+	}
+}
