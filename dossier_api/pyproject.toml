@@ -1,0 +1,33 @@
+[project]
+name = "dossier"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "0xChloe"}
+]
+readme = "README.md"
+requires-python = "<4.0,>=3.12"
+dependencies = [
+    "httpx (>=0.28.1,<0.29.0)",
+    "sqlalchemy (>=2.0.43,<3.0.0)",
+    "sherlock-project (>=0.15.0,<0.16.0)",
+    "fastapi (>=0.116.1,<0.117.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "alembic (>=1.16.5,<2.0.0)",
+    "asyncpg (>=0.30.0,<0.31.0)",
+    "uvicorn (>=0.35.0,<0.36.0)",
+    "python-jose (>=3.5.0,<4.0.0)",
+    "passlib (>=1.7.4,<2.0.0)",
+    "pydantic[email] (>=2.11.7,<3.0.0)",
+    "python-multipart (>=0.0.20,<0.0.21)",
+    "bcrypt (>=4.3.0,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.12.12"
+
