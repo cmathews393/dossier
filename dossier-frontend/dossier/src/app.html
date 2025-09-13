@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Quick client-side hint so the initial render can hide the header on /setup to avoid a flash -->
+		<script>try{if(typeof location !== 'undefined' && location.pathname.startsWith('/setup')){document.documentElement.setAttribute('data-setup','true');}}catch(e){/* ignore */}</script>
+		<!-- Prevent showing UI until the client marks the app ready. This avoids flash-of-auth UI. -->
+		<style>html:not([data-app-ready='true']) body { visibility: hidden; }</style>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
